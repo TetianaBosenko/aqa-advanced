@@ -1,15 +1,15 @@
-let number = 6
+let number = 6;
 
-for (let i = 1; i < 11 ; i++) {
-     let result = number * i 
-     console.log(`${number} x ${i} = ${result}`)
+for (let i = 1; i < 11; i++) {
+    let result = number * i;
+    console.log(`${number} x ${i} = ${result}`);
 }
 
-console.log(' ')
+console.log(' ');
 
-let i = 1
+let i = 1;
 while (i <= 10) {
     let result = number * i;
-    console.log(`${number} x ${i} = ${result}`)
-    i++
+    console.log(`${number} x ${i} = ${result}`);
+    i++;
 }
