@@ -1,6 +1,6 @@
-function myFunction (num) {
+function myFunction(num) {
     console.log(num);
-    if (num <= 0){
+    if (num <= 0) {
         return 0;
     } else {
         return myFunction(num - 1);
