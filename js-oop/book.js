@@ -1,5 +1,5 @@
 export class Book {
-      constructor(title, author, year) {
+    constructor(title, author, year) {
         this._title = title;
         this._author = author;
         this._year = year;
@@ -17,29 +17,29 @@ export class Book {
         return this._year;
     }
 
-    set title (title) {
+    set title(title) {
         if (typeof title !== 'string') {
             throw new Error(`Title should be a string`);
         }
         this._title = title;
     }
 
-    set author (author) {
+    set author(author) {
         if (typeof author !== 'string') {
             throw new Error(`Author should be a string`);
         }
         this._author = author;
-    }    
+    }
 
-    set year (year) {
+    set year(year) {
         if (typeof year !== 'number') {
             throw new Error(`Year should be a number`);
         }
         this._year = year;
     }
 
-    static getEarliest (books) {
-        return books.reduce ((earliest, current) => {
+    static getEarliest(books) {
+        return books.reduce((earliest, current) => {
             if (earliest.year < current.year) {
                 return earliest;
             } else {
@@ -48,7 +48,7 @@ export class Book {
         }, books[0]);
     }
 
-    printInfo () {
+    printInfo() {
         console.log(`${this.title} written by ${this.author} in ${this.year}`);
         return this;
     }
